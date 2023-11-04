@@ -19,7 +19,7 @@ const Buscador = ({ onBuscar }) => {
         value={consulta}
         onChange={handleConsultaChange}
       />
-      <button onClick={buscarColaboradores}>Buscar</button>
+      <button className='buscar' onClick={buscarColaboradores}>Buscar</button>
     </div>
   );
 };

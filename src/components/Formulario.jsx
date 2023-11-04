@@ -33,10 +33,9 @@ const Formulario = ({ onAgregarColaborador }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const nuevosErrores = validarCampos();
-
+  
     if (Object.keys(nuevosErrores).length === 0) {
-      onAgregarColaborador({ nombre, correo, edad, cargo, numero });
-      setNombre('');
+      onAgregarColaborador({ nombre, correo, edad, cargo, numero }); 
       setCorreo('');
       setEdad('');
       setCargo('');
@@ -45,6 +44,7 @@ const Formulario = ({ onAgregarColaborador }) => {
       setErrores(nuevosErrores);
     }
   };
+  
 
   return (
     <div className="container">

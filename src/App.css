@@ -40,3 +40,83 @@
 .read-the-docs {
   color: #888;
 }
+/* Estilos generales */
+body {
+  background-color: #f0f0f0; 
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  padding: 20px; 
+  margin-top: 20px; 
+}
+
+h1 {
+  color: #333; 
+}
+
+button.buscar {
+  background-color: #007bff; /* Fondo azul para el botón Buscar */
+  color: #fff; /* Color de texto blanco para el botón Buscar */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno para el botón Buscar */
+  border-radius: 5px; /* Bordes redondeados para el botón Buscar */
+  cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+
+button.buscar:hover {
+  background-color: #0056b3; /* Cambio de color al pasar por encima del botón Buscar */
+}
+
+/* Estilos para el botón Eliminar */
+button.eliminar {
+  background-color: #dc3545; /* Fondo rojo para el botón Eliminar */
+  color: #fff; /* Color de texto blanco para el botón Eliminar */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno para el botón Eliminar */
+  border-radius: 5px; /* Bordes redondeados para el botón Eliminar */
+  cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+
+button.eliminar:hover {
+  background-color: #c82333; /* Cambio de color al pasar por encima del botón Eliminar */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px; 
+  text-align: left;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}

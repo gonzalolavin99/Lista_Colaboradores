@@ -29,7 +29,7 @@ const Listado = ({ colaboradores, onEliminarColaborador }) => {
             <td>{colaborador.cargo}</td>
             <td>{colaborador.telefono}</td>
             <td>
-              <button onClick={() => handleEliminarColaborador(colaborador.id)}>
+              <button className='eliminar' onClick={() => handleEliminarColaborador(colaborador.id)}>
                 Eliminar
               </button>
             </td>
