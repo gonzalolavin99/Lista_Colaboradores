@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Buscador = () => {
+const Buscador = ({ onBuscar }) => {
+  const [consulta, setConsulta] = useState('');
+
+  const handleConsultaChange = (e) => {
+    setConsulta(e.target.value);
+  };
+
+  const buscarColaboradores = () => {
+    onBuscar(consulta);
+  };
+
   return (
-    <div>Buscador</div>
-  )
-}
+    <div>
+      <input
+        type="text"
+        placeholder="Buscar colaboradores"
+        value={consulta}
+        onChange={handleConsultaChange}
+      />
+      <button onClick={buscarColaboradores}>Buscar</button>
+    </div>
+  );
+};
 
-export default Buscador
+export default Buscador;
