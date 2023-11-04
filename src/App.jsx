@@ -2,6 +2,7 @@ import './App.css'
 import { BaseColaboradores } from './js/colaboradores'
 import Buscador from './components/Buscador'
 import Listado from './components/Listado'
+import Formulario from './components/Formulario'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <Buscador></Buscador>
     <Listado></Listado>
+    <Formulario></Formulario>
     </>
   )
 }
