@@ -5,7 +5,7 @@ const Formulario = ({ onAgregarColaborador }) => {
   const [correo, setCorreo] = useState('');
   const [edad, setEdad] = useState('');
   const [cargo, setCargo] = useState('');
-  const [numero, setNumero] = useState('');
+  const [telefono, setTelefono] = useState('');
   const [errores, setErrores] = useState({});
 
   const validarCampos = () => {
@@ -23,8 +23,8 @@ const Formulario = ({ onAgregarColaborador }) => {
     if (!cargo) {
       nuevosErrores.cargo = 'El cargo es obligatorio';
     }
-    if (!numero) {
-      nuevosErrores.numero = 'El número es obligatorio';
+    if (!telefono) {
+      nuevosErrores.telefono = 'El número es obligatorio';
     }
 
     return nuevosErrores;
@@ -35,11 +35,11 @@ const Formulario = ({ onAgregarColaborador }) => {
     const nuevosErrores = validarCampos();
   
     if (Object.keys(nuevosErrores).length === 0) {
-      onAgregarColaborador({ nombre, correo, edad, cargo, numero }); 
+      onAgregarColaborador({ nombre, correo, edad, cargo, telefono }); 
       setCorreo('');
       setEdad('');
       setCargo('');
-      setNumero('');
+      setTelefono('');
     } else {
       setErrores(nuevosErrores);
     }
@@ -94,10 +94,10 @@ const Formulario = ({ onAgregarColaborador }) => {
             type="number"
             className="form-control"
             placeholder="Número"
-            value={numero}
-            onChange={(e) => setNumero(e.target.value)}
+            value={telefono}
+            onChange={(e) => setTelefono(e.target.value)}
           />
-          {errores.numero && <p className="text-danger">{errores.numero}</p>}
+          {errores.telefono && <p className="text-danger">{errores.telefono}</p>}
         </div>
         <button type="submit" className="btn btn-primary">
           Agregar Colaborador

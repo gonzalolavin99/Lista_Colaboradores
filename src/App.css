@@ -40,7 +40,6 @@
 .read-the-docs {
   color: #888;
 }
-/* Estilos generales */
 body {
   background-color: #f0f0f0; 
   font-family: Arial, sans-serif;
@@ -58,30 +57,29 @@ h1 {
 }
 
 button.buscar {
-  background-color: #007bff; /* Fondo azul para el botón Buscar */
-  color: #fff; /* Color de texto blanco para el botón Buscar */
-  border: none; /* Sin borde */
-  padding: 10px 20px; /* Espaciado interno para el botón Buscar */
-  border-radius: 5px; /* Bordes redondeados para el botón Buscar */
-  cursor: pointer; /* Cambio de cursor al pasar por encima */
+  background-color: #007bff;
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
 }
 
 button.buscar:hover {
-  background-color: #0056b3; /* Cambio de color al pasar por encima del botón Buscar */
+  background-color: #0056b3; 
 }
 
-/* Estilos para el botón Eliminar */
 button.eliminar {
-  background-color: #dc3545; /* Fondo rojo para el botón Eliminar */
-  color: #fff; /* Color de texto blanco para el botón Eliminar */
-  border: none; /* Sin borde */
-  padding: 10px 20px; /* Espaciado interno para el botón Eliminar */
-  border-radius: 5px; /* Bordes redondeados para el botón Eliminar */
-  cursor: pointer; /* Cambio de cursor al pasar por encima */
+  background-color: #dc3545; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
 }
 
 button.eliminar:hover {
-  background-color: #c82333; /* Cambio de color al pasar por encima del botón Eliminar */
+  background-color: #c82333; 
 }
 
 

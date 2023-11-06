@@ -18,7 +18,7 @@ const App = () => {
       nuevoColaborador.correo &&
       nuevoColaborador.edad &&
       nuevoColaborador.cargo &&
-      nuevoColaborador.numero
+      nuevoColaborador.telefono
     ) {
       setColaboradores([...colaboradores, nuevoColaborador]);
       setMensaje('Colaborador agregado exitosamente');
